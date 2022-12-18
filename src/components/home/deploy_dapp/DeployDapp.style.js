@@ -57,4 +57,10 @@ export const DeployDappContainer = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 749px) {
+    .deploy_header {
+      font-size: 2.5rem;
+    }
+  }
 `;
