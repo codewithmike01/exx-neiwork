@@ -133,4 +133,22 @@ export const ExxUpdateContainer = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 749px) {
+    .stay_updated_section {
+      .stay_updated_wrapper {
+        gap: 4rem;
+        .subscription {
+          .subscription_form {
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            button {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
 `;

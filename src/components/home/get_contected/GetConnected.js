@@ -5,7 +5,31 @@ import ButtonBgWhite from '../../shared_components/buttons/ButtonBgWhite';
 import ButtonBlueBg from '../../shared_components/buttons/ButtonBlueBg';
 import { GetConnectedContainer } from './GetContected.style';
 import OutterEclipse from '../../../assets/images/bg-community.png';
+
 const GetConnected = () => {
+  const features = [
+    {
+      id: 1,
+      title: 'Documentation',
+      content: 'Everything needed to build on Exx',
+      link: 'View docs',
+      linkValue: 'none',
+    },
+    {
+      id: 2,
+      title: 'Watch & Learn',
+      content: 'Solidity made easy with recordings',
+      link: 'Watch now',
+      linkValue: 'none',
+    },
+    {
+      id: 3,
+      title: 'Blockchain Explorer ',
+      content: 'Explore transactions on Exx',
+      link: 'Explore now',
+      linkValue: 'none',
+    },
+  ];
   return (
     <GetConnectedContainer>
       <section className="get_contnected_container">
@@ -51,30 +75,16 @@ const GetConnected = () => {
 
       <section className="list_feature_container">
         <ul className="list_features">
-          <li>
-            <span className="feature_highlight">01</span>
-            <h3>Documentation</h3>
-            <p>Everything needed to build on Exx</p>
-            <a href="none" target="_blank">
-              View docs
-            </a>
-          </li>
-          <li>
-            <span className="feature_highlight">02</span>
-            <h3>Watch & Learn </h3>
-            <p> Solidity made easy with recordings</p>
-            <a href="none" target="_blank">
-              Watch now
-            </a>
-          </li>
-          <li>
-            <span className="feature_highlight">03</span>
-            <h3>Blockchain Explorer </h3>
-            <p>Explore transactions on Exx</p>
-            <a href="none" target="_blank">
-              Explore now
-            </a>
-          </li>
+          {features.map(({ id, title, content, link, linkValue }) => (
+            <li key={id}>
+              <span className="feature_highlight">0{id}</span>
+              <h3>{title}</h3>
+              <p>{content}</p>
+              <a href={`${linkValue}`} target="_blank" rel="noreferrer">
+                {link}
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
 
@@ -98,7 +108,11 @@ const GetConnected = () => {
           />
         </section>
         <section className="positional-images">
-          <img src={OutterEclipse} alt="Out Eclipse" />
+          <img
+            src={OutterEclipse}
+            alt="Out Eclipse"
+            className="community-image-big"
+          />
         </section>
       </section>
     </GetConnectedContainer>
