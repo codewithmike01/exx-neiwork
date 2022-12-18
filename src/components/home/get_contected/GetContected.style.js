@@ -167,4 +167,23 @@ export const GetConnectedContainer = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 749px) {
+    .get_contnected_container {
+      width: 90%;
+      padding: 3.15625rem 1.5625rem;
+      .connect_exx {
+        h2 {
+          text-align: center;
+          max-width: 100%;
+        }
+        .connect_cta {
+          max-width: 100%;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
 `;
