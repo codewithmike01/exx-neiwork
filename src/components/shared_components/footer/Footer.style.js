@@ -78,10 +78,13 @@ export const FooterContainer = styled.section`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
 
       .footer_sub_links {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 3rem;
 
         li {
