@@ -46,4 +46,53 @@ export const HeroContainer = styled.section`
       width: 100%;
     }
   }
+
+  .hero_quick-show {
+    margin-top: -10rem;
+    padding: 3rem 0;
+    background-color: var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .quick_show_list {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      align-items: center;
+      justify-content: center;
+      grid-gap: 5.1875rem;
+
+      li {
+        list-style-type: style none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          .text-link {
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 24px;
+            color: #fff;
+          }
+          svg {
+            color: #fff;
+            font-size: 1.1rem;
+          }
+        }
+
+        .text-decribe {
+          font-weight: 400;
+          font-size: 0.9rem;
+          line-height: 20px;
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+    }
+  }
 `;

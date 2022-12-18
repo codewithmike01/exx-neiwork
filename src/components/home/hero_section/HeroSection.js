@@ -31,6 +31,32 @@ const HeroSection = () => {
       <section className="hero_doc_preview">
         <img src={DocPreview} alt="Doc preview" />
       </section>
+
+      <section className="hero_quick-show">
+        <ul className="quick_show_list">
+          <li>
+            <a href="none" target="_blank">
+              <p className="text-link">Documentation</p>
+              <FiArrowUpRight />
+            </a>
+            <p className="text-decribe">EXX seamless swap portal</p>
+          </li>
+          <li>
+            <a href="none" target="_blank">
+              <p className="text-link"> Exx Incubator </p>
+              <FiArrowUpRight />
+            </a>
+            <p className="text-decribe">Launch with EXX platform</p>
+          </li>
+          <li>
+            <a href="none" target="_blank">
+              <p className="text-link">Video Tutorial </p>
+              <FiArrowUpRight />
+            </a>
+            <p className="text-decribe">Earn seamlessly with EXX</p>
+          </li>
+        </ul>
+      </section>
     </HeroContainer>
   );
 };

@@ -14,11 +14,11 @@ const NavBar = () => {
       </div>
 
       <section className="nav_right_section_container">
-        <ul className="nav_links_container">
+        <div className="nav_links_container">
           <NavLink to="/about">About</NavLink>
           <NavLink to="/developers">Developers</NavLink>
           <NavLink to="/blog">Blog</NavLink>
-        </ul>
+        </div>
 
         <div className="nav_right__logic_section">
           <div className="language_switcher_container">
