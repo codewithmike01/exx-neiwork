@@ -9,7 +9,6 @@ export const HeroContainer = styled.section`
   .hero_header {
     font-weight: 700;
     font-size: 3rem;
-    line-height: 94px;
     text-align: center;
     letter-spacing: -0.05em;
 
@@ -93,6 +92,18 @@ export const HeroContainer = styled.section`
           color: rgba(255, 255, 255, 0.6);
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero_header {
+      font-size: 2.5rem;
+    }
+
+    .hero_cta {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
   }
 `;
