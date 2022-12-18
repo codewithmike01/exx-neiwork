@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
 
+:root {
+  --primaryColor: #174aff;
+  --secodaryColor: #0077fe;
+  --textColor: #111315;
+  --white: #ffffff;
+}
+
 /* Basic Normalization */
 html {
   font-size: calc(14px + 0.0368vw);
@@ -31,4 +38,8 @@ h4 {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+body {
+  width: 100%;
 }
