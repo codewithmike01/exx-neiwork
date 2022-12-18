@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../shared_components/footer/Footer';
 import NavBar from '../shared_components/nav_bar/NavBar';
 import DeployDapp from './deploy_dapp/DeployDapp';
 import ExxUpdate from './exx_update/ExxUpdate';
@@ -13,6 +14,7 @@ const Home = () => {
       <DeployDapp />
       <GetConnected />
       <ExxUpdate />
+      <Footer />
     </div>
   );
 };
