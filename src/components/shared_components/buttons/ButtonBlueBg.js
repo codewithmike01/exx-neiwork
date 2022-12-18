@@ -11,7 +11,7 @@ const ButtonBlueBg = ({
 }) => {
   return (
     <Button width={width} border={border}>
-      <p>{text}</p>
+      <p className="button_text">{text}</p>
       {icon && <span>{icon}</span>}
     </Button>
   );

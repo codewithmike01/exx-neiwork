@@ -60,7 +60,7 @@ export const HeroContainer = styled.section`
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       align-items: center;
-      justify-content: center;
+      justify-items: center;
       grid-gap: 5.1875rem;
 
       li {
