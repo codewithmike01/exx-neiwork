@@ -5,7 +5,7 @@ export const GetConnectedContainer = styled.section`
 
   .get_contnected_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 6rem;
     justify-items: center;
     align-items: center;
@@ -14,7 +14,6 @@ export const GetConnectedContainer = styled.section`
     background: #f6f6f6;
     border: 1px solid rgba(23, 74, 255, 0.1);
     border-radius: 20px;
-
     padding: 3.15625rem 4.5625rem;
     margin: 0 auto;
 
@@ -173,6 +172,32 @@ export const GetConnectedContainer = styled.section`
     }
   }
 
+  /* Media Query */
+  @media screen and (max-width: 375px) {
+    .get_contnected_container {
+      padding: 1.15625rem 1.5625rem;
+
+      width: 100%;
+      .connect_exx {
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .join_community_section {
+      padding: 1.4375rem 1.75rem;
+      .join_community_text-content {
+        h2 {
+          font-size: 2rem;
+        }
+      }
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+
   @media screen and (max-width: 619px) {
     .join_community_section {
       /* Positional image */
@@ -210,12 +235,12 @@ export const GetConnectedContainer = styled.section`
       .positional-images {
         position: absolute;
         top: -2px;
-        right: -255px;
+        right: -1px;
         max-width: 796px;
         height: calc(100% + 3.3px);
 
         img {
-          width: 50%;
+          width: 100%;
           height: 100%;
           border-radius: 24px;
         }

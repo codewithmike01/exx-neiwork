@@ -69,11 +69,23 @@ export const NavBarContainer = styled.div`
     }
   }
 
+  /* Mobile Menu */
   @media screen and (max-width: 820px) {
+    position: ${({ menu }) => (menu ? 'fixed' : 'relative')};
+    top: ${({ menu }) => (menu ? '0' : '')};
+    right: ${({ menu }) => (menu ? '20px' : '')};
+    z-index: 3;
     .mobile_menu {
       display: block;
       font-size: 2.5rem;
       z-index: 3;
+    }
+
+    .nav_logo_container {
+      z-index: 3;
+      img {
+        width: 100%;
+      }
     }
 
     .nav_right_section_container {

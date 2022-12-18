@@ -30,7 +30,7 @@ export const ExxUpdateContainer = styled.section`
 
     .exx_update_card_container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       grid-gap: 1.1rem;
 
       .card_container {
@@ -134,14 +134,40 @@ export const ExxUpdateContainer = styled.section`
     }
   }
 
+  /* Madia Query */
+
+  @media screen and (max-width: 375px) {
+    .exx_update_wrapper {
+      padding: 0 1rem;
+      .exx_update_header {
+        font-size: 2rem;
+      }
+    }
+    .stay_updated_section {
+      .stay_updated_wrapper {
+        .stay_updated_content {
+          h2 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 749px) {
     .stay_updated_section {
       .stay_updated_wrapper {
         gap: 4rem;
         .subscription {
+          width: 100%;
           .subscription_form {
             flex-wrap: wrap;
             gap: 2rem;
+            width: 100%;
+
+            .stay_updated_input {
+              width: 100%;
+            }
 
             button {
               width: 100% !important;

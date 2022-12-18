@@ -13,8 +13,6 @@ export const FooterContainer = styled.section`
 
     margin-bottom: 3rem;
 
-    justify-items: center;
-
     .footer_EXX_Block {
       display: flex;
       flex-direction: column;

@@ -95,6 +95,13 @@ export const HeroContainer = styled.section`
     }
   }
 
+  @media screen and (max-width: 375px) {
+    .hero_text {
+      padding: 0 1rem;
+      font-size: 1rem;
+    }
+  }
+
   @media screen and (max-width: 749px) {
     .hero_header {
       font-size: 2.5rem;

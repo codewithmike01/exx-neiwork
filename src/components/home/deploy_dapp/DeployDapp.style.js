@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const DeployDappContainer = styled.section`
   background-color: var(--primaryColor);
   width: 100%;
-
   padding-top: 5.0625rem;
   display: flex;
   flex-direction: column;
@@ -31,7 +30,7 @@ export const DeployDappContainer = styled.section`
 
     .deploy_card_list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 2rem;
 
       li {
@@ -53,6 +52,30 @@ export const DeployDappContainer = styled.section`
           font-size: 1.3rem;
           line-height: 30px;
           color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+
+  /* Media Query */
+  @media screen and (max-width: 375px) {
+    .deploy_header {
+      padding: 0 1rem;
+      font-size: 2rem;
+      text-align: left;
+    }
+
+    .deploy_card {
+      padding: 3.5rem 1rem 0rem 1rem;
+      .deploy_card_list {
+        li {
+          h3 {
+            font-size: 1.2rem;
+          }
+          p {
+            width: 240px;
+            font-size: 1rem;
+          }
         }
       }
     }
