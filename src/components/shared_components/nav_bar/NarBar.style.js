@@ -4,7 +4,7 @@ export const NavBarContainer = styled.div`
   width: 85%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 1.95rem 0;
   display: flex;
   justify-content: space-between;
   .nav_logo_container {
@@ -36,6 +36,9 @@ export const NavBarContainer = styled.div`
       }
     }
     .nav_right__logic_section {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
       .language_switcher_container {
         display: flex;
         align-items: flex-end;

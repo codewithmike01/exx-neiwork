@@ -3,6 +3,8 @@ import { NavBarContainer } from './NarBar.style';
 import { NavLink } from 'react-router-dom';
 import EXXLogo from '../../../assets/images/exx-logo.svg';
 import { TbWorld, TbChevronDown } from 'react-icons/tb';
+import { FiArrowUpRight } from 'react-icons/fi';
+import ButtonBlueBg from '../buttons/ButtonBlueBg';
 
 const NavBar = () => {
   return (
@@ -24,6 +26,13 @@ const NavBar = () => {
             <span className="lang_choice">EN</span>
             <TbChevronDown className="icon_select" />
           </div>
+
+          <ButtonBlueBg
+            text={`Connet Wallet`}
+            width="197px"
+            func={() => {}}
+            icon={<FiArrowUpRight />}
+          />
         </div>
       </section>
     </NavBarContainer>
