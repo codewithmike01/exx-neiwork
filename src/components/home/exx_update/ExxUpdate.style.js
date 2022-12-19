@@ -16,6 +16,7 @@ export const ExxUpdateContainer = styled.section`
       font-size: 2.3rem;
       line-height: 40px;
       color: #141830;
+      /* align-self: flex-start; */
     }
 
     .exx_update_text {
@@ -32,6 +33,7 @@ export const ExxUpdateContainer = styled.section`
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       grid-gap: 1.1rem;
+      /* align-self: flex-start; */
 
       .card_container {
         background: #f5f5f5;
@@ -134,7 +136,6 @@ export const ExxUpdateContainer = styled.section`
   }
 
   /* Madia Query */
-
   @media screen and (max-width: 375px) {
     .exx_update_wrapper {
       padding: 0 1rem;
@@ -177,14 +178,13 @@ export const ExxUpdateContainer = styled.section`
     }
   }
 
-  /* @media screen and (max-width: 1168px) {
-    .subscription {
-      .subscription_form {
-        width: 100%;
-        .stay_updated_input {
-          width: 356px;
-        }
+  @media screen and (max-width: 295px) {
+    .exx_update_wrapper {
+      align-items: center;
+
+      .exx_update_header {
+        align-self: flex-start;
       }
     }
-  } */
+  }
 `;
