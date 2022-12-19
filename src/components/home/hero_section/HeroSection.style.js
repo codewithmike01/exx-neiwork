@@ -33,6 +33,10 @@ export const HeroContainer = styled.section`
     display: flex;
     gap: 1.1rem;
     align-self: center;
+
+    & button:nth-child(3) {
+      display: none;
+    }
   }
 
   .hero_doc_preview {
@@ -98,6 +102,29 @@ export const HeroContainer = styled.section`
     .hero_header {
       padding: 0 1px;
       font-size: 2rem;
+    }
+
+    .hero_cta {
+      display: flex;
+      gap: 1.1rem;
+      align-self: center;
+      width: 80%;
+
+      align-items: center;
+      justify-content: center;
+
+      & button:nth-child(3) {
+        display: flex;
+        align-items: center;
+        p {
+          order: 2;
+        }
+      }
+
+      & button:nth-child(1),
+      & button:nth-child(2) {
+        display: none;
+      }
     }
   }
   @media screen and (max-width: 375px) {

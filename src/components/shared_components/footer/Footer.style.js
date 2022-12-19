@@ -7,7 +7,7 @@ export const FooterContainer = styled.section`
 
   .footer_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 4rem;
     align-items: flex-start;
 

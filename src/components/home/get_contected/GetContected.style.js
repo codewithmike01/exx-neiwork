@@ -266,7 +266,7 @@ export const GetConnectedContainer = styled.section`
     .get_contnected_container {
       padding: 2.15625rem 1.5625rem;
 
-      width: 100%;
+      width: 90%;
       .connect_exx {
         h2 {
           font-size: 1.5rem;

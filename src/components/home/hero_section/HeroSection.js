@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiArrowUpRight } from 'react-icons/fi';
+import { FaDiscord } from 'react-icons/fa';
 import ButtonBgWhite from '../../shared_components/buttons/ButtonBgWhite';
 import ButtonBlueBg from '../../shared_components/buttons/ButtonBlueBg';
 import { HeroContainer } from './HeroSection.style';
@@ -25,6 +26,13 @@ const HeroSection = () => {
           width="15.664375rem"
           func={() => {}}
           icon={<FiArrowUpRight />}
+        />
+
+        <ButtonBlueBg
+          text="Join the community"
+          width="20.4375rem"
+          func={() => {}}
+          icon={<FaDiscord />}
         />
       </section>
 

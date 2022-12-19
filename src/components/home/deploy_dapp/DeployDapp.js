@@ -6,9 +6,11 @@ import Plug from '../../../assets/images/plug.svg';
 const DeployDapp = () => {
   return (
     <DeployDappContainer>
-      <h1 className="deploy_header">
-        Your journey to developing your first dapp.
-      </h1>
+      <div className="bg-header">
+        <h1 className="deploy_header">
+          Your journey to developing your first dapp.
+        </h1>
+      </div>
 
       <section className="deploy_card">
         <ul className="deploy_card_list">
