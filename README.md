@@ -62,6 +62,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - EXX Network
+- React icon
 
 ## 📝 License
 
