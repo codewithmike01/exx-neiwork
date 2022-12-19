@@ -5,6 +5,7 @@ import ButtonBgWhite from '../../shared_components/buttons/ButtonBgWhite';
 import ButtonBlueBg from '../../shared_components/buttons/ButtonBlueBg';
 import { GetConnectedContainer } from './GetContected.style';
 import OutterEclipse from '../../../assets/images/bg-community.png';
+import OutterEclipseMobile from '../../../assets/images/mobile-community.png';
 
 const GetConnected = () => {
   const features = [
@@ -110,6 +111,14 @@ const GetConnected = () => {
         <section className="positional-images">
           <img
             src={OutterEclipse}
+            alt="Out Eclipse"
+            className="community-image-big"
+          />
+        </section>
+
+        <section className="hidden-bg-community">
+          <img
+            src={OutterEclipseMobile}
             alt="Out Eclipse"
             className="community-image-big"
           />

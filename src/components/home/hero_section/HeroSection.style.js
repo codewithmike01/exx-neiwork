@@ -16,7 +16,6 @@ export const HeroContainer = styled.section`
       color: var(--primaryColor);
       margin-left: 10px;
       font-weight: 700;
-      line-height: 94px;
     }
   }
 
