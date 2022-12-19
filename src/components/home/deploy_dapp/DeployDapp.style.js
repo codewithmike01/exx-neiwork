@@ -1,22 +1,27 @@
 import styled from 'styled-components';
 
 export const DeployDappContainer = styled.section`
-  background-color: var(--primaryColor);
-  width: 100%;
-  padding-top: 5.0625rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 4.06rem;
+  position: relative;
 
-  .deploy_header {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 54px;
-    color: #fff;
-    text-align: center;
-    letter-spacing: -0.01em;
+  .bg-header {
+    width: 100%;
+    padding: 0 0.5rem;
+    padding-top: 3.0625rem;
+    height: 60vh;
+    background-color: var(--primaryColor);
+
+    .deploy_header {
+      font-weight: 700;
+      font-size: 3rem;
+      color: #fff;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
   }
 
   .deploy_card {
@@ -26,7 +31,7 @@ export const DeployDappContainer = styled.section`
     border-radius: 19px;
     padding: 3.5rem 2.5rem 0rem 2.5rem;
     width: 90%;
-    margin-bottom: -2rem;
+    margin-top: -18rem;
 
     .deploy_card_list {
       display: grid;
@@ -59,10 +64,11 @@ export const DeployDappContainer = styled.section`
 
   /* Media Query */
   @media screen and (max-width: 375px) {
-    .deploy_header {
-      padding: 0 1rem;
-      font-size: 2rem;
-      text-align: left;
+    .bg-header {
+      .deploy_header {
+        font-size: 2rem;
+        text-align: left;
+      }
     }
 
     .deploy_card {
