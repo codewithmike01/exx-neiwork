@@ -11,6 +11,10 @@ import ButtonBlueBg from '../buttons/ButtonBlueBg';
 const NavBar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
+
+  const connectWallet = () => {
+    console.log('connect');
+  };
   return (
     <NavBarContainer menu={showMobileMenu}>
       <div
@@ -49,7 +53,7 @@ const NavBar = () => {
           <ButtonBlueBg
             text={`Connet Wallet`}
             width="197px"
-            func={() => {}}
+            func={() => connectWallet()}
             icon={<FiArrowUpRight />}
           />
         </div>

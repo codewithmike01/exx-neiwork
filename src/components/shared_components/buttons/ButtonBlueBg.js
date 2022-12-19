@@ -10,7 +10,7 @@ const ButtonBlueBg = ({
   icon,
 }) => {
   return (
-    <Button width={width} border={border}>
+    <Button width={width} border={border} onClick={func}>
       <p className="button_text">{text}</p>
       {icon && <span>{icon}</span>}
     </Button>
