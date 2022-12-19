@@ -1,10 +1,10 @@
 # EXX Network Test App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).This project showcases a responsive MetaBnb website built with Reactjs. Where users can see NFTs, Join the community and also rent a vitual NFTs place to stay.
+This project is based on a web3.0, connecting to the Blockchain Wallet (Metamask). Built with Reactjs
 
 ### Live Link
 
-[Live Link][https://exx-neiwork-m4qe.vercel.app/]
+[Live Link](https://exx-neiwork-m4qe.vercel.app/)
 
 ![image](https://user-images.githubusercontent.com/58771507/208403866-c6f27045-5e99-4b9c-8aec-ce76f0c81ed9.png)
 
