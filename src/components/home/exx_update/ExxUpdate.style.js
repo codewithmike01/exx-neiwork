@@ -75,7 +75,7 @@ export const ExxUpdateContainer = styled.section`
     justify-content: center;
     align-items: center;
     .stay_updated_wrapper {
-      padding: 5.5rem 0;
+      padding: 5.5rem 1rem;
       width: 95%;
       display: flex;
       align-items: center;
