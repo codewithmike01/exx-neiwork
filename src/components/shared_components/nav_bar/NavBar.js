@@ -7,72 +7,82 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { RiCloseFill } from 'react-icons/ri';
 import ButtonBlueBg from '../buttons/ButtonBlueBg';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const NavBar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
+  const [connection, setConnection] = useState('Connect Wallet');
 
-  const connectWallet = () => {
-    console.log('connect');
+  const connectWallet = async () => {
+    if (typeof window.ethereum !== 'undefined') {
+      await window.ethereum
+        .request({ method: 'eth_requestAccounts' })
+        .then((res) => {
+          setConnection('Wallet Connected!');
+        });
+    } else toast.error('Please install MetaMask');
   };
   return (
-    <NavBarContainer menu={showMobileMenu}>
-      <div
-        className="nav_logo_container"
-        onClick={() => {
-          setShowMobileMenu(false);
-          navigate('/');
-        }}
-      >
-        <img src={EXXLogo} alt="EXX logo" />
-      </div>
-
-      <section
-        className="nav_right_section_container"
-        onClick={() => setShowMobileMenu(false)}
-      >
-        <div className="nav_links_container">
-          <NavLink to="/about" onClick={() => setShowMobileMenu(false)}>
-            About
-          </NavLink>
-          <NavLink to="/developers" onClick={() => setShowMobileMenu(false)}>
-            Developers
-          </NavLink>
-          <NavLink to="/blog" onClick={() => setShowMobileMenu(false)}>
-            Blog
-          </NavLink>
+    <>
+      <ToastContainer />
+      <NavBarContainer menu={showMobileMenu}>
+        {' '}
+        <div
+          className="nav_logo_container"
+          onClick={() => {
+            setShowMobileMenu(false);
+            navigate('/');
+          }}
+        >
+          <img src={EXXLogo} alt="EXX logo" />
         </div>
-
-        <div className="nav_right__logic_section">
-          <div className="language_switcher_container">
-            <TbWorld className="world_icon" />
-            <span className="lang_choice">EN</span>
-            <TbChevronDown className="icon_select" />
+        <section
+          className="nav_right_section_container"
+          onClick={() => setShowMobileMenu(false)}
+        >
+          <div className="nav_links_container">
+            <NavLink to="/about" onClick={() => setShowMobileMenu(false)}>
+              About
+            </NavLink>
+            <NavLink to="/developers" onClick={() => setShowMobileMenu(false)}>
+              Developers
+            </NavLink>
+            <NavLink to="/blog" onClick={() => setShowMobileMenu(false)}>
+              Blog
+            </NavLink>
           </div>
 
-          <ButtonBlueBg
-            text={`Connet Wallet`}
-            width="197px"
-            func={() => connectWallet()}
-            icon={<FiArrowUpRight />}
+          <div className="nav_right__logic_section">
+            <div className="language_switcher_container">
+              <TbWorld className="world_icon" />
+              <span className="lang_choice">EN</span>
+              <TbChevronDown className="icon_select" />
+            </div>
+
+            <ButtonBlueBg
+              text={connection}
+              width="197px"
+              func={() => connectWallet()}
+              icon={<FiArrowUpRight />}
+            />
+          </div>
+        </section>
+        {!showMobileMenu && (
+          <HiOutlineMenuAlt3
+            className="mobile_menu"
+            onClick={() => setShowMobileMenu(true)}
           />
-        </div>
-      </section>
-
-      {!showMobileMenu && (
-        <HiOutlineMenuAlt3
-          className="mobile_menu"
-          onClick={() => setShowMobileMenu(true)}
-        />
-      )}
-
-      {showMobileMenu && (
-        <RiCloseFill
-          className="mobile_menu"
-          onClick={() => setShowMobileMenu(false)}
-        />
-      )}
-    </NavBarContainer>
+        )}
+        {showMobileMenu && (
+          <RiCloseFill
+            className="mobile_menu"
+            onClick={() => setShowMobileMenu(false)}
+          />
+        )}
+      </NavBarContainer>
+    </>
   );
 };
 
