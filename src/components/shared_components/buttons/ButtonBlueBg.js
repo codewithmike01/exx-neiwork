@@ -10,7 +10,7 @@ const ButtonBlueBg = ({
   icon,
 }) => {
   return (
-    <Button width={width} border={border}>
+    <Button width={width} border={border} onClick={func}>
       <p className="button_text">{text}</p>
       {icon && <span>{icon}</span>}
     </Button>
@@ -26,6 +26,7 @@ const Button = styled.button`
   background-color: var(--primaryColor);
   border-radius: 10px;
   color: #fff;
+  cursor: pointer;
 
   display: flex;
   align-items: center;

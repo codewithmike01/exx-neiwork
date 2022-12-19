@@ -75,8 +75,8 @@ export const ExxUpdateContainer = styled.section`
     justify-content: center;
     align-items: center;
     .stay_updated_wrapper {
-      padding: 5.5rem 0;
-      width: 90%;
+      padding: 5.5rem 1rem;
+      width: 95%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -108,15 +108,14 @@ export const ExxUpdateContainer = styled.section`
         .subscription_form {
           display: flex;
           gap: 1rem;
-
+          width: 100%;
           .stay_updated_input {
             background: #000000;
             border: 1.03958px solid rgba(255, 255, 255, 0.48);
             border-radius: 10px;
             padding: 1.0625rem;
             padding-left: 1.8125rem;
-
-            width: 456px;
+            width: 376px;
 
             &::placeholder {
               font-weight: 400;
@@ -177,4 +176,15 @@ export const ExxUpdateContainer = styled.section`
       }
     }
   }
+
+  /* @media screen and (max-width: 1168px) {
+    .subscription {
+      .subscription_form {
+        width: 100%;
+        .stay_updated_input {
+          width: 356px;
+        }
+      }
+    }
+  } */
 `;
