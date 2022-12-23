@@ -118,6 +118,7 @@ export const ExxUpdateContainer = styled.section`
             padding: 1.0625rem;
             padding-left: 1.8125rem;
             width: 376px;
+            color: #ffffff;
 
             &::placeholder {
               font-weight: 400;
